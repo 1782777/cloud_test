@@ -160,7 +160,8 @@ class Phone(Manager):
             self.link.request.send(js.encode()) 
             self.link.link =None       
 
-HOST,PORT = "172.16.31.10",8080
+#HOST,PORT = "172.16.31.10",8080
+HOST,PORT = "211.159.168.54",8080
 
 server=socketserver.ThreadingTCPServer((HOST,PORT),MyTCPHandler)#mutilt
 server.serve_forever()
